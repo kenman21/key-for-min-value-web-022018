@@ -3,7 +3,7 @@
 
 def key_for_min_value(name_hash)
   arrayofmaxes = []
-  names_hash.each do |names|
+  name_hash.each do |names|
     arrayofmaxes.push(names_hash[name])
   end 
   min = arrayofmaxes.max
