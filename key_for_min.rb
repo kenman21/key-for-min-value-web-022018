@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   names_hash.each do |names|
     arrayofmaxes.push(names_hash[name])
   end 
-  min = arrayofmaxes.
+  min = arrayofmaxes.max
   name_hash.each do |names, value|
     if value <= min
       min = value
