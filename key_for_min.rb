@@ -3,13 +3,14 @@
 
 def key_for_min_value(name_hash)
   arrayofmaxes = []
-  name_hash.each do |names|
-    arrayofmaxes.push(name_hash[names])
+  min_name = ""
+  name_hash.each do |names, values|
+    arrayofmaxes.push(values)
   end 
-  min = arrayofmaxes.max
+  max = arrayofmaxes.max
   name_hash.each do |names, value|
-    if value <= min
-      min = value
+    if value <= max
+      max = value
       min_name = names
     end 
   end 
